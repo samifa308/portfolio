@@ -10,6 +10,11 @@ header, nav, main, footer {
     align-items: center;
 }
 
+header {
+    justify-content: center;
+    
+}
+
 nav ul {
     list-style-type: none;
     margin: 0;
@@ -21,12 +26,11 @@ nav ul li {
     display: inline;
     margin-right: 20px;
     
-    
 }
 
-.content {
+/* .content {
     padding: 20px;
-}
+} */
 
 .experience {
     display: flex;
@@ -35,7 +39,7 @@ nav ul li {
 }
 .project,
 .experience-info {
-    width: 48%;
+    /* width: 48%; */
 }
 
 body {
@@ -71,13 +75,15 @@ nav a {
 
 .project,
 .experience-info {
-    background-color: #fff;
-    padding: 20px;
+    background: #2A2A2A;
+    padding: 0px;
     border-radius: 5px;
 }
 
 footer {
-
+    flex-direction: column;
+    
+    
 }
 
 @media (min-width: 1285px) {
@@ -115,6 +121,12 @@ main {
     background: #161513;
     color: white;
     font-family: 'Poppins', sans-serif;
+    /* height: 2670px; */
+    /* width: 1440px; */
+    flex-direction: column;
+    gap: 50px;
+    text-align: center;
+
 }
 
 h1 {
@@ -132,20 +144,32 @@ p {
 }
 
 button {
-    
+    width: 195px;
+    border-radius: 50px;
+    height: 64px;
 }
 
 h2 {
-    
+    justify-content: flex-start;
 }
 
 footer {
     background-color: #191919;
     color: #C5C5C5;
+    height: 418.76px;
     
 }
 
 h2 {
     color: #FFFFFF;
 
+}
+
+img {
+    border-radius: 5px;
+    /* width: 48%; */
+}
+
+.div.icon {
+    
 }
