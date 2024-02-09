@@ -1,0 +1,175 @@
+.container {
+    max-width: 1285px;
+    margin: 0;
+    padding: 0;
+}
+
+header, nav, main, footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header {
+    justify-content: center;
+    
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+    
+}
+
+/* .content {
+    padding: 20px;
+} */
+
+.experience {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.project,
+.experience-info {
+    /* width: 48%; */
+}
+
+body {
+    background-color: #f2f2f2;
+}
+
+header, footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.contact {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+.contact a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.experience-info {
+    margin-bottom: 20px;
+}
+
+.project,
+.experience-info {
+    background: #2A2A2A;
+    padding: 0px;
+    border-radius: 5px;
+}
+
+footer {
+    flex-direction: column;
+    
+    
+}
+
+@media (min-width: 1285px) {
+    body {
+        font-family: arial, sans-serif;
+        margin: 0;
+        padding: 0;
+    }
+}
+
+
+
+
+nav {
+    
+    color: white;
+    text-align: center;
+    align-items: flex-end;
+    justify-content: space-around;
+    margin: 0%;
+    padding: 2%;
+    gap: 50px;
+
+}
+
+ul {
+    display: flex;
+    justify-content: space-between; 
+    text-decoration: none;
+    
+    
+}   
+
+main {
+    background: #161513;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    /* height: 2670px; */
+    /* width: 1440px; */
+    flex-direction: column;
+    gap: 50px;
+    text-align: center;
+
+}
+
+h1 {
+    text-align: center;
+    font-weight: 800;
+    line-height: 63.36px;
+}
+
+p {
+    color: #C5C5C5;
+    font-weight: 300;
+    size: 18px;
+    line-height: 27px;
+    text-align: center;
+}
+
+button {
+    width: 195px;
+    border-radius: 50px;
+    height: 64px;
+}
+
+h2 {
+    justify-content: flex-start;
+}
+
+footer {
+    background-color: #191919;
+    color: #C5C5C5;
+    height: 418.76px;
+    
+}
+
+h2 {
+    color: #FFFFFF;
+
+}
+
+img {
+    border-radius: 5px;
+    /* width: 48%; */
+}
+
+.div.icon {
+    
+}
