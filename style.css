@@ -1,7 +1,61 @@
-.container {
-    max-width: 1285px;
-    margin: 0;
+/* global background/layout */
+header, footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+}
+button {
+    width: 195px;
+    border-radius: 50px;
+    height: 64px;
+}
+body {
+    background-color: #f2f2f2;
+}
+img {
+    border-radius: 5px;
+    /* width: 48%; */
+    max-width: 100%;
+    display: block;
+    
+}
+/* list type */
+ul {
+   list-style-type: none;
+   padding: 60px;
+   margin: 0;
+   text-align: left;
+   
+} 
+
+/* typography section */
+h1 {
+    text-align: center;
+    font-weight: 800;
+    line-height: 100px;
+}
+h2 {
+    color: #FFFFFF;
+    font-size: 20px;
+    line-height: 30px;
+    font-weight: 600;
+    padding: 20px;
+}
+p {
+    color: #C5C5C5;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 27px;
+    text-align: center;
+    /* padding: 50px; */
+}
+
+/* global wrapper */
+.wrapper {
+    max-width: 1080px;
     padding: 0;
+    width: 1440px;
+    margin: 0 auto;
 }
 
 header, nav, main, footer {
@@ -9,12 +63,26 @@ header, nav, main, footer {
     justify-content: space-between;
     align-items: center;
 }
-
+/* header styles */
 header {
     justify-content: center;
     
 }
+nav {
+    
+    color: white;
+    text-align: center;
+    align-items: flex-end;
+    justify-content: space-around;
+    margin: 0%;
+    padding: 2%;
+    gap: 50px;
 
+}
+nav a {
+    color: #fff;
+    text-decoration: none;
+}
 nav ul {
     list-style-type: none;
     margin: 0;
@@ -27,96 +95,7 @@ nav ul li {
     margin-right: 20px;
     
 }
-
-/* .content {
-    padding: 20px;
-} */
-
-.experience {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-}
-.project,
-.experience-info {
-    /* width: 48%; */
-}
-
-body {
-    background-color: #f2f2f2;
-}
-
-header, footer {
-    background-color: #333;
-    color: #fff;
-    padding: 20px;
-}
-
-nav a {
-    color: #fff;
-    text-decoration: none;
-}
-
-.contact {
-    background-color: #333;
-    color: #fff;
-    padding: 20px;
-    text-align: center;
-}
-
-.contact a {
-    color: #fff;
-    text-decoration: none;
-}
-
-.experience-info {
-    margin-bottom: 20px;
-}
-
-.project,
-.experience-info {
-    background: #2A2A2A;
-    padding: 0px;
-    border-radius: 5px;
-}
-
-footer {
-    flex-direction: column;
-    
-    
-}
-
-@media (min-width: 1285px) {
-    body {
-        font-family: arial, sans-serif;
-        margin: 0;
-        padding: 0;
-    }
-}
-
-
-
-
-nav {
-    
-    color: white;
-    text-align: center;
-    align-items: flex-end;
-    justify-content: space-around;
-    margin: 0%;
-    padding: 2%;
-    gap: 50px;
-
-}
-
-ul {
-    display: flex;
-    justify-content: space-between; 
-    text-decoration: none;
-    
-    
-}   
-
+/* main section */
 main {
     background: #161513;
     color: white;
@@ -129,28 +108,53 @@ main {
 
 }
 
-h1 {
-    text-align: center;
+.tagline {
+    padding-top: 20px;
+    font-size: 55px;
     font-weight: 800;
-    line-height: 63.36px;
+   
+/* variables */
+:colors {
+    --primary-color: var(--PrimaryGradient)
+    --secondary-color: var(--#FF8660)
+    --text-color: var(--#9A33FF)
 }
 
-p {
-    color: #C5C5C5;
-    font-weight: 300;
-    size: 18px;
-    line-height: 27px;
-    text-align: center;
+
+}
+/* experience section */
+.experience {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 40px;
+    padding-bottom: 70px;
 }
 
-button {
-    width: 195px;
-    border-radius: 50px;
-    height: 64px;
+.experience-info {
+    margin-bottom: 20px;
+}
+/* project section */
+.project,
+.experience-info {
+    background: #2A2A2A;
+    padding: 0px;
+    border-radius: 5px;
 }
 
-h2 {
-    justify-content: flex-start;
+.projects-container {
+    display: flex;
+    justify-content: center;
+}
+.project  {
+    max-width: 390px;
+}
+
+
+/* footer styles */
+footer {
+    
+    flex-direction:
 }
 
 footer {
@@ -159,17 +163,37 @@ footer {
     height: 418.76px;
     
 }
-
-h2 {
-    color: #FFFFFF;
-
-}
-
-img {
-    border-radius: 5px;
-    /* width: 48%; */
-}
-
-.div.icon {
+.icons {
+    display: flex;
+    /* justify-content: ; */
+    gap: 10px;
+    
     
 }
+h3 {
+    /* background-color: #333; */
+    color: #fff;
+    padding: 20px;
+    /* text-align: center; */
+    font-weight: 700;
+    font-size: 23px;
+    line-height: 35.29px;
+}
+
+.contact a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* media queries */
+@media (min-width: 1285px) {
+    body {
+        font-family: arial, sans-serif;
+        margin: 0;
+        padding: 0;
+    }
+}
+
+
+
+
