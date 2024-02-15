@@ -6,6 +6,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <link rel="stylesheet" href="./style.css">
     <title>Samantha k</title>
 </head>
@@ -14,12 +15,15 @@
     <div class="wrapper"></div>
     <header>
         <nav>
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Projects</a></li>
-                <li><a href="#">Experience</a></li>
-                <li><a href="#">Contact</a></li>
+            <ul class="nav-ul" id="nav-ul">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#project">Projects</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
+            <span class="material-symbols-outlined mobile-menu" id="mobile-menu">
+                menu
+                </span>
         </nav>
     </header>
     <!-- main -->
@@ -31,16 +35,16 @@
     <!-- title -->
     <div class="wrapper">
         <div class="tagline">
-            <h1>I do code and make content about it!</h1>
+            <h1>I do code and make content <span class="gradient-text">about it!</span></h1>
         </div>
             <!-- about me section -->
-            <p class="content">
+            <p class="content" id="Home">
                 Hey there! 👋 I'm Samantha Kelln, a budding web developer with a passion for crafting immersive digital experiences. While I'm relatively new to the world of web development, I've already dipped my toes into the exciting waters of HTML and CSS, mastering the art of bringing designs to life and creating visually stunning websites.
 
                 But my journey doesn't stop there. I've also delved into the world of JavaScript, where I'm steadily expanding my knowledge and skills to add dynamic functionalities and interactivity to my projects. While I may still be navigating through the complexities of JavaScript, I'm eager to tackle new challenges head-on and continue to grow as a developer.
             </p>
             <!-- action button -->
-            <button class="type" type="button">Get in touch</button>
+            <button class="type" type="button"> <a href="#contact">Get in touch</a></button>
     
         <div>
             <!-- experience with section -->
@@ -58,7 +62,7 @@
             </div>
             
         </div>
-        <section class="projects-container">
+        <section class="projects-container" id="project">
             <div class="project">
             
                 <a href="https://iftheselandscouldtalk.org/" target="_blank">
@@ -70,7 +74,7 @@
         </section>
             <!-- projects section -->
         
-            <h2>experience</h2>
+            <h2 id="experience">experience</h2>
             <ul>
                 <li>Mentee, Indigenous Friends Association - remote</li>
                 <p>Successfully designed logos with excellent reviews from the instructor. Developed meaningful web pages illustrating land based learnings using VSCode. Collaborating with a team to create a sharing knowledge and cultural learnings platform.</p>
@@ -88,7 +92,7 @@
         <div class="wrapper">
             <div class="contact-info">
 
-                <h3>Contact</h3>
+                <h3 id="contact">Contact</h3>
             <p>I am a dedicated and enthusiastic individual committed to making a positive impact through the application of technology.</p>
                 <div class="icons">
                     <img src="./contact icons/Email Icon.svg">samanthakelln@yahoo.ca</img>  
@@ -104,6 +108,6 @@
      
     
     </footer>
-    
+    <script src="./script.js"></script>
 </body>
 </html>
